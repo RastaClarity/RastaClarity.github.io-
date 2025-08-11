@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corsaria — Biblioteca & Taller de Proyectos</title>
+  <meta name="description" content="Centro de mando de Corsaria: proyectos, biblioteca de investigación y automatizaciones de escritura." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (opcional): tipografías y colores suaves
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"] },
+          boxShadow: { glass: "0 10px 30px rgba(0,0,0,.12)" }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 backdrop-blur supports-[backdrop-filter]:bg-black/30 bg-black/40 z-50 border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="h-9 w-9 rounded-2xl bg-gradient-to-tr from-emerald-400 to-sky-500 shadow-glass"></div>
+        <span class="text-lg font-extrabold tracking-tight">Corsaria</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-1">
+        <a href="#proyectos" class="px-3 py-2 rounded-xl hover:bg-white/10">Proyectos</a>
+        <a href="#biblioteca" class="px-3 py-2 rounded-xl hover:bg-white/10">Biblioteca</a>
+        <a href="#automatizaciones" class="px-3 py-2 rounded-xl hover:bg-white/10">Automatizaciones</a>
+        <a href="#contacto" class="px-3 py-2 rounded-xl hover:bg-white/10">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div aria-hidden class="absolute -top-24 -right-24 h-80 w-80 bg-emerald-400/20 rounded-full blur-3xl"></div>
+    <div aria-hidden class="absolute -bottom-32 -left-16 h-96 w-96 bg-sky-400/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+            Tu coautora virtual para novelas de aventura
+          </h1>
+          <p class="mt-4 text-slate-300 max-w-xl">
+            Organiza ideas, documenta investigación y sincroniza tus flujos de trabajo. Corsaria es el puente entre creatividad y estructura.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#proyectos" class="px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold">Ver proyectos</a>
+            <a href="#biblioteca" class="px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/15">Abrir biblioteca</a>
+            <a href="#automatizaciones" class="px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/15">Automatizaciones</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-glass">
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div class="p-3 rounded-2xl bg-black/30 border border-white/10">
+                <p class="text-slate-400">Estado</p>
+                <p class="font-semibold">Escribiendo Cap. 3</p>
+              </div>
+              <div class="p-3 rounded-2xl bg-black/30 border border-white/10">
+                <p class="text-slate-400">Palabras</p>
+                <p class="font-semibold">27.430</p>
+              </div>
+              <div class="p-3 rounded-2xl bg-black/30 border border-white/10">
+                <p class="text-slate-400">Personajes</p>
+                <p class="font-semibold">12 activos</p>
+              </div>
+              <div class="p-3 rounded-2xl bg-black/30 border border-white/10">
+                <p class="text-slate-400">Tareas hoy</p>
+                <p class="font-semibold">3 pendientes</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-300">Consejo de Corsaria: <span class="text-slate-100 font-semibold">cierra el arco emocional del capítulo antes de dormir.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-3xl font-extrabold">Proyectos</h2>
+        <p class="text-slate-300">Tu flota de historias. Edita títulos, enlaces y etiquetas en el HTML.</p>
+      </div>
+      <a class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15" href="#" target="_blank" rel="noreferrer">+ Nuevo</a>
+    </div>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+        <h3 class="text-xl font-bold">Saskia y la Ciudad Escondida</h3>
+        <p class="mt-2 text-slate-300">Aventura arqueológica épica con misterio tecnológico antiguo.</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="px-2 py-1 rounded-lg bg-emerald-500/20 border border-emerald-400/30">borrador</span>
+          <span class="px-2 py-1 rounded-lg bg-sky-500/20 border border-sky-400/30">arco 1</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Doc</a>
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Fichas</a>
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Outline</a>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+        <h3 class="text-xl font-bold">Bitácora Corsaria</h3>
+        <p class="mt-2 text-slate-300">Relatos cortos en el mismo mundo para probar ideas y tonos.</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="px-2 py-1 rounded-lg bg-yellow-500/20 border border-yellow-400/30">en revisión</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Doc</a>
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Tablero</a>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="rounded-3xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+        <h3 class="text-xl font-bold">Atlas de Culturas Perdidas</h3>
+        <p class="mt-2 text-slate-300">Enciclopedia del mundo: lugares, artefactos, lenguas.</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="px-2 py-1 rounded-lg bg-purple-500/20 border border-purple-400/30">worldbuilding</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Base de datos</a>
+          <a class="text-sky-300 hover:underline" href="#" target="_blank">Mapa</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Biblioteca -->
+  <section id="biblioteca" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <h2 class="text-3xl font-extrabold">Biblioteca de Investigación</h2>
+    <p class="text-slate-300">Aquí conectas Notion/Sheets/Airtable con referencias, notas y enlaces. Los filtros son solo visuales.</p>
+
+    <div class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <h3 class="font-semibold">Etiquetas rápidas</h3>
+        <div class="mt-3 flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 rounded-full bg-white/10">personajes</span>
+          <span class="px-3 py-1 rounded-full bg-white/10">lugares</span>
+          <span class="px-3 py-1 rounded-full bg-white/10">tecnología</span>
+          <span class="px-3 py-1 rounded-full bg-white/10">tramas</span>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <h3 class="font-semibold">Fuentes</h3>
+        <ul class="mt-3 space-y-2 text-slate-300">
+          <li><a class="text-sky-300 hover:underline" href="#" target="_blank">Notion: Biblioteca</a></li>
+          <li><a class="text-sky-300 hover:underline" href="#" target="_blank">Google Drive: Investigación</a></li>
+          <li><a class="text-sky-300 hover:underline" href="#" target="_blank">Airtable: Fichas</a></li>
+        </ul>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <h3 class="font-semibold">Atajos</h3>
+        <ul class="mt-3 space-y-2 text-slate-300">
+          <li>Plantilla de ficha de personaje</li>
+          <li>Checklist de capítulo</li>
+          <li>Guía de estilo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automatizaciones -->
+  <section id="automatizaciones" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <h2 class="text-3xl font-extrabold">Automatizaciones</h2>
+    <p class="text-slate-300">Flujos de Make para mantener todo sincronizado.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <h3 class="font-bold">1) Captura de ideas ➜ Base</h3>
+        <p class="mt-2 text-slate-300">De Google Docs/Telegram a Sheets/Notion con etiquetas y fecha.</p>
+        <span class="inline-block mt-3 px-2 py-1 text-xs rounded bg-emerald-500/20 border border-emerald-400/30">activo</span>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <h3 class="font-bold">2) Fichas de personajes</h3>
+        <p class="mt-2 text-slate-300">Autocompleta arquetipos, rasgos y relaciones.</p>
+        <span class="inline-block mt-3 px-2 py-1 text-xs rounded bg-yellow-500/20 border border-yellow-400/30">en pruebas</span>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+        <h3 class="font-bold">3) Resúmenes & backups</h3>
+        <p class="mt-2 text-slate-300">Resumen diario + copia en Drive/Dropbox.</p>
+        <span class="inline-block mt-3 px-2 py-1 text-xs rounded bg-purple-500/20 border border-purple-400/30">planificado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+      <h2 class="text-3xl font-extrabold">Contacto</h2>
+      <p class="mt-2 text-slate-300">Añade tus enlaces reales aquí.</p>
+      <div class="mt-5 grid sm:grid-cols-2 gap-4">
+        <a class="px-5 py-4 rounded-2xl bg-white/10 hover:bg-white/15" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="px-5 py-4 rounded-2xl bg-white/10 hover:bg-white/15" href="https://www.notion.so/" target="_blank" rel="noreferrer">Notion</a>
+      </div>
+      <p class="mt-6 text-xs text-slate-400">Edítame: cambia textos y enlaces, súbeme como <code>index.html</code> a tu repo <strong>usuario.github.io</strong>.</p>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-400">Hecho con ❤ por Corsaria</footer>
+</body>
+</html>
